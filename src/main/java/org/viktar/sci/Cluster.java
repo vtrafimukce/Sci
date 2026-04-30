@@ -69,8 +69,4 @@ public class Cluster {
         return new Cluster(mass * count, p * count, n * count,
                 (name.contains("+") ? "(" + name + ")" : name) + "*" + count);
     }
-
-    public Cluster renamed(String newName) {
-        return new Cluster(mass, p, n, newName);
-    }
 }
