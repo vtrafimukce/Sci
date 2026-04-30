@@ -65,7 +65,7 @@ public class Cluster {
         return new Cluster(mass + other.mass, p + other.p, n + other.n, name + "+" + other.name);
     }
 
-    public Cluster times(int count) {
+    public Cluster multiply(int count) {
         return new Cluster(mass * count, p * count, n * count,
                 (name.contains("+") ? "(" + name + ")" : name) + "*" + count);
     }
